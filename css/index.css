@@ -130,6 +130,18 @@ body{
 }
 /* end why */
 
+/* start course */
+#course .text-atas{
+    font-family: 'Anton', sans-serif;
+    color: var(--warna-tebal);
+    font-size: 45px;
+}
+
+#course .paragraf{
+    color: var(--warna-utama);
+}
+/* end course */
+
 /* reponsive breakpoint */
 
 /* Untuk tablet dengan lebar layar kurang dari 768px */
@@ -262,6 +274,14 @@ body{
     }
     #why .kartu .paragraf{
         font-size: 16px;
+    }
+
+    #course .text-atas{
+        font-size: 30px;
+    }
+    
+    #course .paragraf{
+        font-size: 14px;
     }
 }
 
