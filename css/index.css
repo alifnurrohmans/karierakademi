@@ -1,6 +1,7 @@
 /* variable warna */
 :root {
     --warna-utama: #4169e1;
+    --warna-tebal: #002366;
     overflow-x: hidden;
 }
 /* start navbar */
@@ -11,7 +12,7 @@
 }
 
 .masuk{
-    color: #002366 !important;
+    color: var(--warna-tebal) !important;
     font-weight: bold !important;
 }
 /* end navbar */
@@ -32,6 +33,27 @@
     width: 100%;
 }
 /* end home */
+
+/* start about */
+#about .text-atas{
+    font-family: 'Anton', sans-serif;
+    font-size: 45px;
+    color: var(--warna-tebal);
+}
+
+#about .text-bawah{
+    font-size: 18px;
+}
+
+.about-image{
+    background: url(/img/about-img.png);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* end about */
 
 /* reponsive breakpoint */
 
@@ -73,6 +95,18 @@
         color: white;
         border: solid 1px white;
     }
+
+    #about .text-atas{
+        font-size: 35px;
+    }
+    
+    #about .text-bawah{
+        font-size: 16px;
+    }
+
+    .about-image{
+        height: 350px;
+    }
 }
 
 /* Untuk perangkat seluler dengan lebar layar kurang dari 576px */
@@ -80,6 +114,19 @@
     #home .text-utama{
         font-size: 30px;
         line-height: 50px;
+    }
+
+    #about .text-atas{
+        font-size: 25px;
+        margin-bottom: 14px;
+    }
+    
+    #about .text-bawah{
+        font-size: 12px;
+    }
+
+    .about-image{
+        height: 200px;
     }
 }
 
