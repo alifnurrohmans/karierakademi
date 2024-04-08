@@ -1,0 +1,34 @@
+/* variable warna */
+:root {
+    --warna-utama: #4169e1;
+    overflow-x: hidden;
+}
+/* start navbar */
+.nav-active{
+    text-decoration: underline !important;
+    color: var(--warna-utama) !important;
+    font-weight: bold !important;
+}
+
+.masuk{
+    color: #002366 !important;
+    font-weight: bold !important;
+}
+/* end navbar */
+
+/* start home */
+#home{
+    background-color: #f9faff;
+}
+
+#home .text-utama{
+    font-size: 50px;
+    color: var(--warna-utama);
+    font-family: 'Anton', sans-serif;
+    line-height: 70px;
+}
+
+#home .home-image{
+    width: 100%;
+}
+/* end home */
