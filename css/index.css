@@ -5,6 +5,11 @@
     --warna-bg-secodary: #e1e1df;
     overflow-x: hidden;
 }
+
+body{
+    margin: 0;
+    padding: 0;
+}
 /* start navbar */
 .nav-active{
     text-decoration: underline !important;
@@ -83,11 +88,13 @@
     width: 300px;
     height: 100px;
     background-color: white;
-    font-family: 'Anton', sans-serif;
-    color: var(--warna-tebal);
     display: flex;
     align-items: center; /* Menengahkan secara vertikal */
     justify-content: center; /* Menengahkan secara horizontal */
+}
+#ask .btn-tanya span{
+    font-family: 'Anton', sans-serif;
+    color: var(--warna-tebal);
 }
 /* end ask */
 
@@ -104,6 +111,8 @@
         background-image: url('../img/home-img.png');
         width: 100%;
         height: 40vh;
+
+        overflow-x: hidden;
 
         background-repeat: no-repeat;
         background-size: cover;
@@ -198,6 +207,10 @@
 
     #ask .btn-tanya span{
         font-size: 12px;
+    }
+
+    #ask .btn-tanya img{
+        width: 20%;
     }
 }
 
