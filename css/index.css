@@ -2,6 +2,7 @@
 :root {
     --warna-utama: #4169e1;
     --warna-tebal: #002366;
+    --warna-bg-secodary: #e1e1df;
     overflow-x: hidden;
 }
 /* start navbar */
@@ -63,6 +64,33 @@
 }
 /* end about */
 
+/* start ask */
+#ask{
+    background-color: var(--warna-bg-secodary);
+}
+#ask .text-atas{
+    font-family: 'Anton', sans-serif;
+    font-size: 45px;
+    color: var(--warna-tebal);
+}
+
+#ask .text-bawah{
+    font-size: 18px;
+    width: 70%;
+}
+
+#ask .btn-tanya{
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    font-family: 'Anton', sans-serif;
+    color: var(--warna-tebal);
+    display: flex;
+    align-items: center; /* Menengahkan secara vertikal */
+    justify-content: center; /* Menengahkan secara horizontal */
+}
+/* end ask */
+
 /* reponsive breakpoint */
 
 /* Untuk tablet dengan lebar layar kurang dari 768px */
@@ -119,6 +147,15 @@
     #about .title-fasilitas{
         font-size: 15px;
     }
+
+    #ask .text-atas{
+        font-size: 35px;
+    }
+    
+    #ask .text-bawah{
+        width: 90%;
+        font-size: 16px;
+    }
 }
 
 /* Untuk perangkat seluler dengan lebar layar kurang dari 576px */
@@ -143,6 +180,24 @@
 
     #about .title-fasilitas{
         font-size: 18px;
+    }
+
+    #ask .text-atas{
+        font-size: 25px;
+        margin-bottom: 14px;
+    }
+    
+    #ask .text-bawah{
+        font-size: 12px;
+    }
+
+    #ask .btn-tanya{
+        width: 250px;
+        height: 100px;
+    }
+
+    #ask .btn-tanya span{
+        font-size: 12px;
     }
 }
 
