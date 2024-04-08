@@ -98,6 +98,38 @@ body{
 }
 /* end ask */
 
+/* start why */
+#why .kartu{
+    width: 100%;
+    height: 250px;
+    background-color: var(--warna-bg-secodary);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+#why .kartu.aktif{
+    background-color: var(--warna-utama);
+}
+#why .kartu.aktif .judul, #why .kartu.aktif .paragraf{
+    color: white;
+}
+
+#why .text-atas{
+    font-family: 'Anton', sans-serif;
+    color: var(--warna-tebal);
+    font-size: 45px;
+}
+
+#why .kartu .judul{
+    font-family: 'Anton', sans-serif;
+    color: var(--warna-tebal);
+}
+#why .kartu .paragraf{
+    color: var(--warna-tebal);
+}
+/* end why */
+
 /* reponsive breakpoint */
 
 /* Untuk tablet dengan lebar layar kurang dari 768px */
@@ -165,6 +197,12 @@ body{
         width: 90%;
         font-size: 16px;
     }
+    #why .kartu .judul{
+        font-size: 20px;
+    }
+    #why .kartu .paragraf{
+        font-size: 12px;
+    }
 }
 
 /* Untuk perangkat seluler dengan lebar layar kurang dari 576px */
@@ -211,6 +249,19 @@ body{
 
     #ask .btn-tanya img{
         width: 15%;
+    }
+
+    #why .text-atas{
+        font-family: 'Anton', sans-serif;
+        color: var(--warna-tebal);
+        font-size: 30px;
+    }
+
+    #why .kartu .judul{
+        font-size: 24px;
+    }
+    #why .kartu .paragraf{
+        font-size: 16px;
     }
 }
 
