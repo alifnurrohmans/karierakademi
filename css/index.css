@@ -32,3 +32,54 @@
     width: 100%;
 }
 /* end home */
+
+/* reponsive breakpoint */
+
+/* Untuk tablet dengan lebar layar kurang dari 768px */
+@media (max-width: 1000px) {
+    #home .text-utama{
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    #home .col-lg-5{
+        background-image: url(/img/home-img.png);
+        width: 100vw;
+        height: 90vh;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center; /* Menengahkan secara vertikal */
+        justify-content: center; /* Menengahkan secara horizontal */
+    }
+
+    #home .container{
+        align-items: center;
+    }
+
+    #home .col-lg-6{
+        display: none;
+    }
+
+    #home .home-image{
+        /* width: 100%; */
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #home .btn-masuk{
+        color: white;
+        border: solid 1px white;
+    }
+}
+
+/* Untuk perangkat seluler dengan lebar layar kurang dari 576px */
+@media (max-width: 575px) {
+    #home .text-utama{
+        font-size: 30px;
+        line-height: 50px;
+    }
+}
+
